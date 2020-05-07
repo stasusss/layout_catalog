@@ -10,3 +10,18 @@ body {
   margin: 0;
   font-family: Roboto, sans-serif;
 }
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  gap: 50px 48px;
+  justify-content: center;
+  align-content: center;
+  margin: 50px auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .main {
+    grid-template-columns: repeat(auto-fill, 200px);
+  }
+}
